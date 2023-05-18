@@ -40,7 +40,7 @@ public class HomePageTest extends BaseTest{
 	 * The objective of this case is "To verify the apllication's logo has been displayed"
 	 * this method used Soft assert or verify concept from TestNG
 	 */
-	@Test(enabled=true)
+	@Test(enabled=true,groups={"regression"})
 	void TC_TripAdvisor_HomePage_002()
 	{
 		HomePage objHomePage=new HomePage(driver);

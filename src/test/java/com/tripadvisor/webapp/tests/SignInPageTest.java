@@ -29,7 +29,7 @@ public class SignInPageTest extends BaseTest {
 	 * The objective of this test case is "To assert the Header of the frame"
 	 * This test method uses hard assert concept from TestNG
 	 */
-	@Test(enabled=true)
+	@Test(enabled=true,groups="regression")
 	public void TC_TripAdvisor_SignInPage_001()
 	{
 		HomePage objHomePage=new HomePage(driver);
@@ -162,7 +162,7 @@ public class SignInPageTest extends BaseTest {
 	 * The objective of this test case is "To verify that user can not login with Blank Password"
 	 *  This is negative test case
 	 */
-	@Test(enabled=true)
+	@Test(enabled=true,groups="regression")
 	public void TC_TripAdvisor_SignInPage_Negative_009()
 	{
 		HomePage objHomePage=new HomePage(driver);

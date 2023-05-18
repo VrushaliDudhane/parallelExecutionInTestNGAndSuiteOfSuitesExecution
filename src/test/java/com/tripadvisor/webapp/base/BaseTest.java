@@ -40,7 +40,7 @@ public abstract class BaseTest {
 	 * @param browser this browser parameter is given by testng.xml
 	 */
 	@Parameters("Browser")
-	@BeforeMethod
+	@BeforeMethod(alwaysRun = true)
 	synchronized public void init(String browser)
 	{
 		driver=WebDriverFactoryClass.initWebDriver(browser);
@@ -56,7 +56,7 @@ public abstract class BaseTest {
 	 * this method annotated with AfterMethod 
 	 * which gets executed after every test
 	 */
-	@AfterMethod
+	@AfterMethod(alwaysRun = true)
 	synchronized public void tearDown()
 	{
 		WebDriverFactoryClass.getWebDriver().quit();
